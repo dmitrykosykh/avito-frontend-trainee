@@ -9,3 +9,6 @@ build:
 
 clean:
 			rm -rf ./dist
+
+deploy:
+			npx gh-pages -d dist
