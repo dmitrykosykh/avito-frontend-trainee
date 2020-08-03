@@ -3,3 +3,9 @@ start:
 	
 test:
 			npx jest
+
+build:
+			npx webpack --config webpack.prod.js
+
+clean:
+			rm -rf ./dist
