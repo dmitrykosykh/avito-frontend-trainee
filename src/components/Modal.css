@@ -1,0 +1,265 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .Modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Modal__Content {
+    display: grid;
+    grid-template-columns: 30px 300px 14px 190px 14px 26px 21px;
+    grid-template-rows: 30px 205px 29px 150px 20px;
+    width: min-content;
+    height: min-content;
+    background-color: white;
+    margin-top: 190px;
+  }
+
+  .Modal_Block-image {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .Modal__Image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .Modal__Block-add-comment__Inputs {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+
+  .Modal__Input-name {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .Modal__Input-comment {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 30px;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+
+  .Modal__Input-name::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #CCCCCC;
+  }
+
+  .Modal__Input-comment::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #CCCCCC;
+  }
+
+  .Modal__Button {
+    background: #4997D0;
+    border-radius: 3px;
+    height: 30px;
+    width: 100%;
+    margin-top: 19px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .Modal__Block-comments {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .Modal__Comment-date {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #999999;
+  }
+
+  .Modal__Comment-description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    word-break: break-all;
+  }
+
+  .Modal__Comment {
+    margin-bottom: 15px;
+  }
+
+  .Modal__Block-close {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .Modal__Close {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Syncopate', sans-serif;
+    color: black;
+  }
+
+  .Modal__Close:hover {
+    color: #424242;
+  }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .Modal__content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .Modal__Image {
+    max-width: 100%;
+  }
+
+  .Modal__Block-add-comment__Inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .Modal__Input-name {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .Modal__Input-comment {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 30px;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+
+  .Modal__Input-name::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #CCCCCC;
+  }
+
+  .Modal__Input-comment::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #CCCCCC;
+  }
+
+  .Modal__Button {
+    background: #4997D0;
+    border-radius: 3px;
+    height: 30px;
+    width: 100%;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .Modal__Block-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .Modal__Close {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Syncopate', sans-serif;
+    color: black;
+  }
+
+  .Modal__Close:hover {
+    color: #424242;
+  }
+
+  .Modal__Block-comments {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .Modal__Comment-date {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #999999;
+  }
+
+  .Modal__Comment-description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    word-break: break-all;
+  }
+
+  .Modal__Comment {
+    margin-bottom: 15px;
+  }
+}

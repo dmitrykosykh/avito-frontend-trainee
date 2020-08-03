@@ -1,0 +1,108 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .app-title {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+  }
+
+  .image {
+    width: 280px;
+    height: 171px;
+    margin-bottom: 30px;
+  }
+
+  .block-footer {
+    border-top: 1px solid #CCCCCC;
+    display: flex;
+    justify-content: center;
+  }
+
+  .block-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer-copyright {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #CCCCCC;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .app {
+    width: 768px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .app-title {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #000000;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image {
+    width: 229px;
+    height: 142px;
+    margin-left: 11px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+
+  .block-footer {
+    border-top: 1px solid #CCCCCC;
+    width: 728px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .block-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-copyright {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #CCCCCC;
+  }
+}
